@@ -4,7 +4,7 @@
 package edu.iis.mto.bsearch;
 
 /**
- * Utility Class dla wyszukiwania binarnego
+ * Klasa implementująca wyszukiwanie binarne
  *
  */
 public class BinarySearch {
@@ -39,7 +39,6 @@ public class BinarySearch {
                     end = center - 1;
                 }
             }
-
         }
         return result;
     }
