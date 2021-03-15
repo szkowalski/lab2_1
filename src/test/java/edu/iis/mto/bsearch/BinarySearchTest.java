@@ -55,4 +55,13 @@ class BinarySearchTest {
         assertEquals(true, a.isFound());
         assertEquals(4, a.getPosition());
     }
+
+    @Test
+    void test6()
+    {
+        int[] testArray={1,3,4,7,8,10,21};
+        SearchResult a = BinarySearch.search(99, testArray);
+        assertEquals(false, a.isFound());
+        assertEquals(-1, a.getPosition());
+    }
 }
