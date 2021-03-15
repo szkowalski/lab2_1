@@ -12,7 +12,7 @@ class BinarySearchTest {
     void setUp() throws Exception {}
 
     @Test
-    void test1()
+    public void element_is_in_array()
     {
         int[] testArray={1};
         SearchResult a = BinarySearch.search(1, testArray);
@@ -21,7 +21,7 @@ class BinarySearchTest {
     }
 
     @Test
-    void test2()
+    public void element_is_not_in_array()
     {
         int[] testArray={1};
         SearchResult a = BinarySearch.search(1, testArray);
@@ -30,7 +30,7 @@ class BinarySearchTest {
     }
 
     @Test
-    void test3()
+    public void element_is_first_in_array()
     {
         int[] testArray={1,3,4,7,8,10};
         SearchResult a = BinarySearch.search(1, testArray);
@@ -39,7 +39,7 @@ class BinarySearchTest {
     }
 
     @Test
-    void test4()
+    public void element_is_last_in_array()
     {
         int[] testArray={1,3,4,7,8,10};
         SearchResult a = BinarySearch.search(10, testArray);
@@ -48,7 +48,7 @@ class BinarySearchTest {
     }
 
     @Test
-    void test5()
+    public void element_is_center_in_array()
     {
         int[] testArray={1,3,4,7,8,10,21};
         SearchResult a = BinarySearch.search(7, testArray);
@@ -57,7 +57,7 @@ class BinarySearchTest {
     }
 
     @Test
-    void test6()
+    public void element_is_not_in_multi_array()
     {
         int[] testArray={1,3,4,7,8,10,21};
         SearchResult a = BinarySearch.search(99, testArray);
