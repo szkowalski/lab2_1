@@ -5,6 +5,8 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import javax.swing.*;
+
 
 class BinarySearchTest {
 
@@ -64,4 +66,19 @@ class BinarySearchTest {
         assertEquals(false, a.isFound());
         assertEquals(-1, a.getPosition());
     }
+
+    @Test
+    public void array_is_null()
+    {
+        int[] testArray=null;
+        try{
+            SearchResult a = BinarySearch.search(99, testArray);
+        }
+        catch (Exception x)
+        {
+            //ignore
+            System.out.println(x.getMessage());
+        }
+    }
+
 }
