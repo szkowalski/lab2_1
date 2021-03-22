@@ -67,18 +67,5 @@ class BinarySearchTest {
         assertEquals(-1, a.getPosition());
     }
 
-    @Test
-    public void array_is_null()
-    {
-        int[] testArray=null;
-        try{
-            SearchResult a = BinarySearch.search(99, testArray);
-        }
-        catch (Exception x)
-        {
-            //ignore
-            System.out.println(x.getMessage());
-        }
-    }
 
 }
