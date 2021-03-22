@@ -25,7 +25,7 @@ class BinarySearchTest {
     @Test
     public void element_is_not_in_array()
     {
-        int[] testArray={1};
+        int[] testArray={2};
         SearchResult a = BinarySearch.search(1, testArray);
         assertEquals(false, a.isFound());
         assertEquals(-1, a.getPosition());
